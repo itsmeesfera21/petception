@@ -1,0 +1,25 @@
+<%# navigation styled for Zurb Foundation 5 %>
+
+ <div class="logo left tests">
+ <%=link_to image_tag("logo.png", alt: "Rails logo"),root_path %>     
+   </div>
+
+ <div class="header_middle left text-right">
+        <div class="headtext">Be first to have your own one-of-a-kind petcam!</div>
+         <section class="top-bar right">
+            <ul class="off-canvas-list sub-nav">
+            <%= render 'layouts/navigation_links' %>                          
+            </ul>
+          </section>
+        <nav class="tab-bar mobile-menu">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" aria-expanded="false"><span></span></a>
+            </section>
+          </nav> 
+        </div>
+         <div class="header-right right text-right">
+            <a class="custom-button radius button" href="#connectWith">Submit Info Now<small>to Connect with us</small></a>
+        </div>
+
+
+

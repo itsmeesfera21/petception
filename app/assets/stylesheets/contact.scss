@@ -1,0 +1,116 @@
+// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h3.contact-heading {
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 38px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #0772b9;
+  margin: 20px 0px;
+}
+.contact-slide {
+  position: relative;
+}
+.contact-slide h1 {
+  bottom: 140px;
+  color: #ffffff;
+  float: none;
+  font-size: 55px;
+  left: 0;
+  line-height: 70px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: 0 0 10px #000000;
+  width: 90%;
+  z-index: 10;
+}
+.contact form label {
+  color: #2e3092;
+  font-family: "Conv_MYRIADPRO-BOLDCONDIT";
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.contact form input, .contact form select, .contact form textarea {
+  background-color: #eae5dd;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #000;
+  line-height: 20px;
+}
+.contact form input:focus, .contact form select:focus, .contact form textarea:focus {
+  background-color: #f4f3f0;
+}
+.contact form textarea {
+  height: 100px;
+  resize: none;
+}
+.contact form .button {
+  background-color: #fea100;
+  float: none;
+  font-size: 32px;
+  font-style: normal;
+  margin: 0 auto;
+  min-width: 170px;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+.contact h2 {
+  color: #0033ff;
+  float: left;
+  font-family: "Conv_MYRIADPRO-BOLDCONDIT",sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  width: 100%;
+}
+.about-red {
+  color: #ff0000;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 32px;
+  line-height: 48px;
+  padding-top: 1%;
+  text-align: center;
+}
+.staff-contant {
+  display: block;
+}
+.staff-contant > h1 {
+  font-size: 60px;
+  padding: 0 10px;
+  text-align: center;
+  color: #00a74f;
+}
+.Technology-ttl {
+  color: #00569d;
+  font-family: "Conv_MYRIADPRO-REGULAR";
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 1%;
+  padding-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bx_staff01 {
+  float: left;
+  margin: 25px 2%;
+  width: 21%;
+}
+.bx_staff01 img {
+  height: auto;
+  width: 100% !important;
+}
+.img-ttl {
+    background-color: #e6e6e6;
+    font-size: 12px;
+    padding: 10px 5px;
+    text-align: center;
+    font-family: "Conv_MYRIADPRO-REGULAR";
+}

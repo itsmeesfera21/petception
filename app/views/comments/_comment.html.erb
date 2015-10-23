@@ -1,0 +1,13 @@
+
+    <div class="comment clearfix">
+        <div class="comm_icons left">
+            <i class="fi-torso"></i>
+        </div>
+        <div class="comm_desc left">
+            <div id="comment-user">
+                <h3><%= User.find(comment.user_id).first_name %></h3>
+                <div><%= comment.created_at.strftime("%d")%> <%= comment.created_at.strftime("%b")%>  <%= comment.created_at.strftime("%Y")%>                </div>
+            </div>
+            <p><%= comment.content %></p>
+        </div>
+    </div>

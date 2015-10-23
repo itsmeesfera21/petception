@@ -1,0 +1,46 @@
+<section class="get_social">
+<div class="row">
+  <div class="large-12 columns text-center">
+    <h2>Get social with Petception Now!</h2>
+    <div class="social_wrap">
+     <a class="facebook" href="https://www.facebook.com/Petception">facebook</a>
+     <a class="twitter" href="https://twitter.com/PetCeption">twitter</a>
+     <a class="google" href="https://plus.google.com/+PetCeption/posts/p/pub">google</a>
+     <a class="youtube"  href="https://www.youtube.com/user/PetCeption/featured?view_as=public">youtube</a>    
+<%= image_tag("social-down3.png", :alt => "") %>
+  </div>
+  </div>
+</div> 
+<div class="copyright">
+  <div class="row">
+    <div class="large-12 columns text-center">
+     <p>Copywrite 2015 PetCeption| All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+</section>
+<script type="text/javascript">
+  $.noConflict();
+ jQuery(document).ready(function(){
+          jQuery(".left-off-canvas-toggle").click(function(){
+             jQuery(".top-bar").toggleClass("open");
+          });
+      });
+
+  jQuery(function() {
+    jQuery('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = jQuery(this.hash);
+        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          jQuery('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1200);
+          return false;
+        }
+      }
+    });
+  });
+
+</script>
+  

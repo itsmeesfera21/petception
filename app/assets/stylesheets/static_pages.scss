@@ -1,0 +1,225 @@
+#connectWith, #section3 {
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover; 
+}
+#slider .video-container .orbit-caption {
+  position: absolute !important;
+  top: 15%;
+  width: 100%;
+}
+#slider video {
+  width: 100%;
+  z-index: 999999;
+}
+/*----------------- starting of section 2 style --------------------------*/
+#section2 h2 {
+  font-size: 48px;
+  line-height: 50px;
+}
+#section2 h3 {
+  font-size: 31px;
+}
+/*----------------- closing of section 2 style --------------------------*/
+/*----------------- starting of section 3 style --------------------------*/
+#section2,
+#section4 {
+  padding: 80px 0;
+}
+#slider .video-container {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.video_content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  top: 30%;
+}
+.video-container {
+  position: relative;
+}
+#section3 video,#section5 video {
+  width: 100%;
+  display: inline-block;
+}
+/*#section3 {
+  background:asset-data-url("slider05.png") 0 0 no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+*/
+/*----------------- closing of section 3 style --------------------------*/
+#section4 .row > .small-4 h2.zz {
+  line-height: 50px;
+  font-size: 48px;
+}
+.cat {
+  width: 160px;
+  margin: 0 auto;
+  display: block;
+}
+#section2 h2 span,
+#section4 h2 span {
+  display: block;
+}
+/*----------------- starting of section5 style --------------------------*/
+/*#section5 { 
+  background:asset-data-url("reina_computer.jpg") 0 0 no-repeat;
+  padding: 150px 0;
+  background-size: cover;
+  background-attachment: fixed;
+}*/
+#section5 h1,#section3 h1 {
+  color: #ffffff;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px #333333;
+}
+#section5 h1 span{
+  display: block;
+}
+#section5 h3,#section3 h3 {
+  color: #0033ff;
+  font-size: 42px;
+}
+/*----------------- closing of  section5 style --------------------------*/
+.sider-maintext h1,
+.sider-maintext h1 small,
+.slider-section h2,
+#section3 h1 {
+  color:#fff;
+  text-shadow: 1px 1px 2px #333333;
+}
+#section2 h2,
+#section2 h1 span,
+#section2 h3 span,
+#section4 h2,
+#section4 h1 span,
+#section4 h3 span {
+  color: #00a74f;
+}
+#section2 h2,
+#section2 h1,
+#section4 h2,
+#section4 h1 { 
+line-height: 40px;
+}
+#section2 .icon-icon8,
+#section2 .icon-icon7,
+#section4 .icon-icon8,
+#section4 .icon-icon7,
+#section4 .icon-icon5 {
+  display: block;
+  overflow: hidden;
+  height: 200px;
+  color: #2e3192;
+}
+#section4 h3 {
+  font-size: 35px;
+}
+#section2 .icon-icon8,
+#section4 .icon-icon8,
+#section4 .icon-icon5 {
+  font-size: 250px;
+}
+#section4 .icon-icon6 {
+  color: #2e3192;
+  display: block;
+  font-size: 211px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  top: 22px;
+}
+ #section2 .icon-icon7,
+ #section4 .icon-icon7 {
+ font-size: 280px;
+}
+
+#section2 h1,
+#section4 h1{ 
+  font-size: 68px;
+}
+#section2 h1,
+#section2 h3,
+#section3 h3,
+#section4 h1,
+#section4 h3{
+  color: #2e3192;
+}
+/*----------------- starting of section6 style --------------------------*/
+.ActivationModes {
+  /*padding: 40px 0 0px;*/
+}
+.ActivationModes h1 {
+  color: #2e3092;
+  font-size: 72px;
+  line-height: 72px;
+  margin-bottom: 0;
+}
+.ActivationModes .mode h2 {
+  color: #00a550;
+  font-size: 48px;
+  line-height: 48px;
+  margin-top: 0;
+}
+.ActivationModes .mode p {
+  font-size: 23px;
+  color: #000;
+}
+.ActivationModes h3 {
+  color: #2e3092;
+  font-size: 30px;
+  font-family: 'MyriadPro-Regular';
+}
+.ActivationModes span.icon {
+  color: #003a7e;
+  display: inline-block;
+  font-size: 210px;
+  line-height: 125px;
+  vertical-align: bottom;
+  margin: 5px 0 10px;
+}
+.ActivationModes span.icon.icon-icon3 {
+  font-size: 355px;
+  position: relative;
+  top: 27px;
+}
+.points {
+  background: #1da537 none repeat scroll 0 0;
+  color: #ffffff;
+  padding: 18px 0;
+  margin-top: 25px;
+}
+#section6 .points {
+  margin-top: 0px;
+  width: 100%;
+  display: inline-block;
+}
+.points p span.icon-icon10 {
+  font-size: 42px;
+  left: 0;
+  line-height: 28px;
+  position: absolute;
+  top: 0;
+  color:#fff;
+}
+.header-group.text-center > h3 {
+  color: #0935FE !important;
+}
+
+.points p strong {
+  color: #73d9fe;
+  font-size: 28px;
+  font-weight: normal;
+}
+.points p {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding-left: 53px;
+  position: relative;
+  text-transform: uppercase;
+}

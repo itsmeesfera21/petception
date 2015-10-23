@@ -1,0 +1,102 @@
+<section class="blog-section">
+  <div class="contact-slide">
+    <%= image_tag("blog_banner.jpg")%>
+    <h1>Blog</h1>
+  </div>
+<div class="blog_wrap">
+   <div class="row">
+    <div class="medium-9 columns">
+    <p id="notice"><%= notice %></p>  
+
+     <% @posts.each do |post| %>
+       <div class="blog  clearfix">
+        <div class="blog_date left">
+         <h5><strong> <%= post.created_at.strftime("%d")%> </strong><span><%= post.created_at.strftime("%b")%> </span> <%= post.created_at.strftime("%Y")%> </h5>
+        </div>
+        <div class="blog_content left">
+        <h2><%= post.name %></h2>
+         <div class="blog_thumb">  <% if post.image? %>
+              <%= image_tag(post.image.url(:post)) %>
+            <% else %>
+              <%= image_tag("blog.png") %>
+            <% end %> 
+            </div>         
+         <p><%= post.content %></p>
+          <%= link_to 'Read more', post, :class => "button" %>      
+           <ul class="post_info">           
+             <li>By<span>Admin</span></li>
+             <li><%= post.comments.size %><span>Comments</span>
+             </li>  
+             <li>Posted at<span><%= post.created_at.strftime("%d")%> <%= post.created_at.strftime("%b")%>  <%= post.created_at.strftime("%Y")%></span></li>
+             <li>share on:
+               <a class="facebook_share" href="#">facebook</a>
+               <a class="twitter_share" href="#">Twitter</a>
+               <a class="google_share" href="#">Google plus</a>
+             </li>  
+          </ul>
+      </div>
+    </div>
+    <% end %>
+   
+</div>
+     <div class="medium-3 columns">
+      <div class="sidebar">
+    <%= form_tag posts_path, :method => 'get'  ,:class => 'blog_Search' do %>
+        <%= text_field_tag :search, params[:search] ,:placeholder=>"Search"%>
+        <%= button_tag "", :class => "btn"  %>
+    <% end %>
+       <!--<form class="blog_Search">
+        <input type="text" value="" placeholder="Search">
+        <button class="btn" type="submit"></button>
+       </form>-->
+       <h3>Folow Us</h3>
+       <ul class="social_icons">
+        <li class="facebook"><a herf="https://www.facebook.com/Petception">Facebook</a></li>
+        <li class="twitter"><a herf="https://twitter.com/PetCeption">Twitter</a></li>
+        <li class="googleplus"><a herf="https://plus.google.com/+PetCeption/posts/p/pub">Google Plus</a></li>
+        <li class="youtube"><a herf="https://www.youtube.com/user/PetCeption/featured?view_as=public">Youtube</a></li>
+       </ul>
+       <div class="categories sidebar_sec">
+        <h3>Categories</h3>
+        <ul>
+         <% @categories.each do |category| %>         
+          <li>
+            <%= category.name %> 
+            <%= category._id %>
+          </li>          
+           <% end %>
+        </ul>
+       </div>
+       <div class="instagram_block sidebar_sec">
+         <h3>Check out our world Pets</h3>
+         <ul class="post_thumbs clearfix">
+          <li><a href="#" ><%= image_tag("blog1.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog2.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog3.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog4.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog5.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog6.jpg") %></a></li>
+           <li><a href="#" ><%= image_tag("blog1.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog2.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog3.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog4.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog5.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog6.jpg") %></a></li>
+           <li><a href="#" ><%= image_tag("blog1.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog2.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog3.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog4.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog5.jpg") %></a></li>
+          <li><a href="#" ><%= image_tag("blog6.jpg") %></a></li>
+         </ul>
+       </div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+
+
+
+
+

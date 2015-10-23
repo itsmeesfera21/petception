@@ -1,0 +1,204 @@
+<% provide(:title, "Contact") %>
+<section class="contact">
+  <div class="row">
+    <div class="large-12 columns text-center">
+      <h3 class="contact-heading">“Helping people better understand the world according to pets”</h3>
+    </div>
+  </div>
+  <div class="contact-slide">
+  <%= image_tag("contact-slide.jpg") %>    
+    <h1>Our team is passionate about pets and technology. We dare almost use the word animalistic</h1>
+  </div>
+<div class="row">
+    <div class="medium-12 columns text-center">
+      <h2>Express your wild side with us</h2>
+    </div>
+     <%= form_for @contact, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    <div class="medium-6 columns">
+ 
+        <div class="row">
+          <div class="large-12 columns">          
+              <%= f.label :email %>
+             <%= f.text_field :email %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <!--<label>First name</label>
+            <input type="text" placeholder="" />-->
+          <%= f.label :firstname %>
+             <%= f.text_field :firstname %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+        <!--    <label>Last name</label>
+            <input type="text" placeholder="" /> -->
+             <%= f.label :lastname %>
+             <%= f.text_field :lastname %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns"> 
+       <%= f.label :petnames %>
+             <%= f.text_field :petnames %>
+          </div>
+        </div>
+      
+    </div>
+    <!-- large 6 close here -->
+
+    <div class="medium-6 columns">
+   
+        <div class="row">
+          <div class="large-12 columns"> 
+          <%= f.label :inquiry_id ,"Reason for your Inquiry" %>            
+          <%= f.collection_select(:inquiry_id, Inquiry.all, :_id, :inquiry_name) %>    
+                  
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">  
+              <%= f.label :help_reason,  "What can we help you with?" %>
+             <%= f.text_area :help_reason %>        
+              
+          </div>
+        </div>       
+     <%= f.submit "Send"  , :class => 'button round'%> 
+    </div>
+    <!-- large 6 close here -->
+
+  </div>
+  <% end %>
+<div class="about-red">
+      Currently in process of developing a pet camera prototype <br>(Available Spring 2015)
+    </div>
+
+
+<div class="staff-contant">
+
+<h1>Meet the PetCeption Team</h1>
+
+<div class="row clearfix">
+<div class="Technology-ttl">Technology</div>
+
+<div class="bx_staff01">
+<%= image_tag("video_1.png", :class => "img-responsive") %>
+<div class="img-ttl">Einstein(CTO) : Chief  "Terrier" Officer</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video_2.png", :class => "img-responsive") %>
+<div class="img-ttl">Ace : Lead Cat Product Development</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video_3.png", :class => "img-responsive") %>
+<div class="img-ttl">Mac : Lead Dog Product Development </div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video_4.png", :class => "img-responsive") %>
+ <div class="img-ttl">Saber :   Pet Programmer</div>
+</div><!--bx_staff01_ends-->
+
+</div><!--row_ends-->
+
+
+
+
+
+<div class="row clearfix">
+<div class="Technology-ttl">Marketing</div>
+
+<div class="bx_staff01">
+<%= image_tag("video_5.png", :class => "img-responsive") %>
+<div class="img-ttl">Stich (CMO) : Chief "Meow" Officer</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video_6.png", :class => "img-responsive") %>
+
+ <div class="img-ttl">Fido and Fifi : Account Executives</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+
+<%= image_tag("video_7.png", :class => "img-responsive") %>
+<div class="img-ttl">Harley (PR) : Pet Relations</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video_8.png", :class => "img-responsive") %>
+
+<div class="img-ttl">Cat and Dog Brand Manager</div>
+</div><!--bx_staff01_ends-->
+
+</div><!--row_ends-->
+
+
+
+
+<div class="row clearfix">
+<div class="Technology-ttl">Professional Services</div>
+
+<div class="bx_staff01">
+<%= image_tag("video9.png", :class => "img-responsive") %>
+<div class="img-ttl">Lilly (COO) : Chief Operations officer</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video10.png", :class => "img-responsive") %>
+<div class="img-ttl">Ludwig (CFO) : Chief "Fido" Officer</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video11.png", :class => "img-responsive") %>
+<div class="img-ttl">Dash JD : Legal Counsel juris Dog</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video12.png", :class => "img-responsive") %>
+<div class="img-ttl">Vega (CHO): Chief "Hairball" Officer</div>
+</div><!--bx_staff01_ends-->
+
+</div><!--row_ends-->
+
+
+
+
+<div class="row clearfix">
+<div class="Technology-ttl">Support Service</div>
+
+<div class="bx_staff01">
+<%= image_tag("video13.png", :class => "img-responsive") %>
+
+                  <div class="img-ttl">Customer Service : "The Cat Box"</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+
+               <%= image_tag("video14.png", :class => "img-responsive") %>
+                  <div class="img-ttl">Jack : Custodial Service</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video15.png", :class => "img-responsive") %>                
+                  <div class="img-ttl">Franky : PetCeption "Photographer"</div>
+</div><!--bx_staff01_ends-->
+
+<div class="bx_staff01">
+<%= image_tag("video16.png", :class => "img-responsive") %>
+                                 <div class="img-ttl">Most Important : Our Pet Community</div>
+</div><!--bx_staff01_ends-->
+
+</div><!--row_ends-->
+
+</div>
+
+
+</section>
